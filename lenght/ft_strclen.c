@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncpy.c                                       :+:    :+:            */
+/*   ft_strclen.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:48:00 by sofferha      ########   odam.nl         */
+/*   Created: 2019/10/28 17:31:45 by swofferh      #+#    #+#                 */
+/*   Updated: 2020/08/17 22:30:39 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_STR_N_CPY
-** Copies a string until a given 'stop' (number of times/len).
+** FT_STRLEN: Computes the length of the string s
+** returns the number of characters that precede
+** the terminating NUL character.
 */
 
-char		*ft_strncpy(char *dst, const char *src, int n)
+int			ft_strclen(char *str, char c)
 {
 	int		index;
 
 	index = 0;
-	while (index < n)
-	{
-		dst[index] = src[index];
+	while (str[index] && str[index] != c)
 		index++;
-	}
-	dst[index] = '\0';
-	return (dst);
+	return (index);
 }

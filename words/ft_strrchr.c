@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:13:21 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 19:26:54 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:48:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRRCHR: locate last occurence of character c in string and then

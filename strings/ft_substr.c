@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:40:42 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:50:40 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:40 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_SUBSTR: Allocates with malloc and returns

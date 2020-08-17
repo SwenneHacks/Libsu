@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncpy.c                                       :+:    :+:            */
+/*   ft_putnbr_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:48:00 by sofferha      ########   odam.nl         */
+/*   Created: 2019/11/08 13:39:25 by swofferh      #+#    #+#                 */
+/*   Updated: 2020/08/17 22:32:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_STR_N_CPY
-** Copies a string until a given 'stop' (number of times/len).
+** FT_PUTNBR_FD: Outputs the integer n to given file descriptor.
 */
 
-char		*ft_strncpy(char *dst, const char *src, int n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int		index;
-
-	index = 0;
-	while (index < n)
+	if (n == -2147483648)
 	{
-		dst[index] = src[index];
-		index++;
+		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
-	dst[index] = '\0';
-	return (dst);
+	else if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		ft_putnbr_fd(-n, fd);
+	}
+	else if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+	{
+		ft_putchar_fd(n + '0', fd);
+	}
 }

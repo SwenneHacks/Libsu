@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:11:38 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:42:13 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:31:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_MEMCHR: locates the first occurrence of c,

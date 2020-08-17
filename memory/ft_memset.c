@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 13:21:32 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:43:26 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:31:23 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_MEMSET: fill memory with a constant byte

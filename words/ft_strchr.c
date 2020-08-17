@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:40 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:47:09 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:33:11 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRCHR: locate first occurence of character in string

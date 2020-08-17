@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncpy.c                                       :+:    :+:            */
+/*   ft_putstr_fd.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:48:00 by sofferha      ########   odam.nl         */
+/*   Created: 2019/11/08 13:08:58 by swofferh      #+#    #+#                 */
+/*   Updated: 2020/08/17 22:32:11 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_STR_N_CPY
-** Copies a string until a given 'stop' (number of times/len).
+** FT_PUTSTR_FD: Outputs the string c to given file descriptor.
 */
 
-char		*ft_strncpy(char *dst, const char *src, int n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int		index;
-
-	index = 0;
-	while (index < n)
-	{
-		dst[index] = src[index];
-		index++;
-	}
-	dst[index] = '\0';
-	return (dst);
+	if (s == NULL)
+		return ;
+	write(fd, s, ft_strlen(s));
 }

@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 21:14:35 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 19:34:50 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:47:55 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRNCMP: compares two strings lexographically...

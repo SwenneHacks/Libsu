@@ -6,11 +6,11 @@
 /*   By: swofferh <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/29 16:00:53 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:37:58 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:30:19 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_ISALPHA: checks for an alphabetic character

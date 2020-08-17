@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:57:17 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:49:15 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:33 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRMAPI: Applies the function f to each character of

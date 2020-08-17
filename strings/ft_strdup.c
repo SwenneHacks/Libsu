@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:21:01 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:47:35 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:18 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 #include <errno.h>
 
 /*

@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 19:03:21 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:51:14 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:27:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_TOLOWER: converst upper-case letter to lower-case

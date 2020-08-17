@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:50:36 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:50:27 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:36 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRTRIM: Allocates with malloc and returns a copy of

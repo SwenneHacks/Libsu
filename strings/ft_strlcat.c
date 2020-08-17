@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:30:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:48:24 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:25 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRLCAT: Appends string src to the end of dst.

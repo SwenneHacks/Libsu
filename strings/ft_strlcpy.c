@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 19:31:20 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:32:29 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRLCPY: copies all chars in a string to a limit number of chars (len)

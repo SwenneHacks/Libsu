@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:31 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:49:54 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:48:04 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_STRNSTR: locate of needle in haystack

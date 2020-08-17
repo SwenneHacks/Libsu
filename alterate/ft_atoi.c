@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/29 11:16:22 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/06/17 14:01:38 by swofferh      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:26:52 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 int	ft_atoi(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:37:29 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:30:59 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_CALLOC: contiguously allocates enough space for count objects that

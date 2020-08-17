@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncpy.c                                       :+:    :+:            */
+/*   ft_numlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:48:00 by sofferha      ########   odam.nl         */
+/*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
+/*   Updated: 2020/08/17 22:30:35 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_STR_N_CPY
-** Copies a string until a given 'stop' (number of times/len).
+** FT_NUMLEN (it's like strlen but handy for different num bases).
 */
 
-char		*ft_strncpy(char *dst, const char *src, int n)
+int		ft_numlen(int n)
 {
-	int		index;
+	int		len;
 
-	index = 0;
-	while (index < n)
+	len = 0;
+	if (n == 0)
+		return (1);
+	if (n < 0)
+		len++;
+	while (n)
 	{
-		dst[index] = src[index];
-		index++;
+		n /= 10;
+		len++;
 	}
-	dst[index] = '\0';
-	return (dst);
+	return (len);
 }

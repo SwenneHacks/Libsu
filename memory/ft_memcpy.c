@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/01 16:59:00 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:42:49 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 22:31:16 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_MEMCPY: copy memory area
