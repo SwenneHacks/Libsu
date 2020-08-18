@@ -6,14 +6,14 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:30:35 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/18 17:26:49 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_NUMLEN (it's like strlen but handy for different num bases).
+** FT_NUMLEN (it's like strlen but for numbers - decimals).
 */
 
 int		ft_numlen(int n)
