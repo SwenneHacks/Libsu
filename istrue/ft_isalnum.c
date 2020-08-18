@@ -6,11 +6,12 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 16:52:39 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:30:15 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/17 23:29:26 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
+
 /*
 ** FT_ISALNUM: checks for an alphabetic character or digit
 ** returns zero if character tests false, non-zero is true.
