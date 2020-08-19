@@ -7,13 +7,13 @@ My ultimate C-Language library (with my own added functions).
 - ft_words
 - ft_wordlen
 - ft_numlen
+- ft_lenbase
 - ft_strncpy
 - ft_strclen
 - ft_isupper
 - ft_islower
-- ft_putchar
-- ft_putstr
-- ft_putnbr
+- ft_puthexa
+- ft_putocta
 - ft_prints
 - ft_printf
-- ft_gnl
+- get_next_line
