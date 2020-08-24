@@ -8,6 +8,8 @@ My ultimate C-Language library (with my own added functions).
 - ft_wordlen
 - ft_numlen
 - ft_lenbase
+- ft_memlen
+- ft_textsize
 - ft_strncpy
 - ft_strclen
 - ft_isupper
