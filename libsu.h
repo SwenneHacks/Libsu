@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/18 17:30:33 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/24 23:42:16 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,31 +17,20 @@
 # include <stdlib.h>
 # include <stdarg.h>
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 32
-# endif
-
-typedef enum		e_state
-{
-	ONE_LINE = 1,
-	END_FILE = 0,
-	ERROR = -1,
-	LOOP = 2
-}					t_state;
-
 int					get_next_line(int fd, char **line);
 void				ft_prints(const char *str, ...);
 /*
 ** 					Libft MEMORY functions
 */
-void				*ft_calloc(size_t count, size_t size);
 void				ft_bzero(void *s, size_t n);
+void				*ft_calloc(size_t count, size_t size);
+void				*ft_memset(void *b, int c, size_t len);
+void				*ft_memchr(const void *s, int c, size_t n);
+void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-void				*ft_memchr(const void *s, int c, size_t n);
-void				*ft_memcpy(void *dst, const void *src, size_t n);
-void				*ft_memset(void *b, int c, size_t len);
+char                *ft_memlen(int len);
 /*
 ** 					Libft STRING functions
 */
@@ -64,8 +53,9 @@ size_t len);
 int                 ft_numlen(int n);
 size_t				ft_strlen(const char *str);
 size_t				ft_lenbase(long long nbr, int base);
-int         		word_len(char const *str, int i, char space);
+int					ft_wordlen(char const *str, int i, char space);
 int                 ft_strclen(char *str, char c);
+int     			ft_textsize(const char *str);
 /*
 ** 					Libft 'MAPI' functions
 */
@@ -104,6 +94,7 @@ int                 ft_isspace(char c);
 ** 					check WORDS functions
 */
 char				**ft_split(char const *s, char c);
+int					ft_words(char const *str, char space);
 /*
 ** 					Operators
 */
