@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:27:03 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/24 22:05:40 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,42 +17,6 @@
 ** representing the integer received as an argument.
 ** Negative numbers must be handled, NULL if faisl.
 */
-
-static int		ft_numlen(int n)
-{
-	int		len;
-
-	len = 0;
-	if (n == 0)
-		return (1);
-	if (n < 0)
-		len++;
-	while (n)
-	{
-		n /= 10;
-		len++;
-	}
-	return (len);
-}
-
-static char		*ft_memlen(int len)
-{
-	char	*res;
-
-	res = (char *)malloc(len);
-	if (res == NULL)
-		return (NULL);
-	res[len - 1] = '\0';
-	return (res);
-}
-
-static char		*ft_longnull(int n)
-{
-	if (n == 0)
-		return (ft_strdup("0"));
-	else
-		return (ft_strdup("-2147483648"));
-}
 
 static char		ft_solver(int sign, int len, int n, char *res)
 {
