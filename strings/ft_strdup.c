@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:21:01 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:18 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/19 18:58:48 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strdup(const char *s1)
 	dup = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (!dup)
 		ENOMEM;
-	if (dup = NULL)
+	if (dup == NULL)
 		return (NULL);
 	i = 0;
 	while (s1[i])

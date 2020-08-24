@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/30 18:00:18 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/18 17:33:10 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/19 18:57:51 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	ft_unsigned(const char *str, va_list arg)
 	if (str[1] == 'o')
 	{
 		u = (unsigned int)va_arg(arg, unsigned int);
-		ft_putnbr_octa(u);
+		ft_putocta(u);
 	}
 }
 
@@ -36,17 +36,17 @@ static void	ft_hexadecimal(const char *str, va_list arg)
 	{
 		h = (unsigned long)va_arg(arg, void *);
 		ft_putstr("0x");
-		ft_putnbr_hexa(h, 'x');
+		ft_puthexa(h, 'x');
 	}
 	if (str[1] == 'x')
 	{
 		h = va_arg(arg, unsigned int);
-		ft_putnbr_hexa(h, 'x');
+		ft_puthexa(h, 'x');
 	}
 	if (str[1] == 'X')
 	{
 		h = va_arg(arg, unsigned int);
-		ft_putnbr_hexa(h, 'X');
+		ft_puthexa(h, 'X');
 		ft_toupper((int)h);
 	}
 }

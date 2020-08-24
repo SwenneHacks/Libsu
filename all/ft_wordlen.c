@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/18 17:26:25 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/19 19:05:56 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** FT_WORDLEN counts the amout of chars/lettersin a word.
 */
 
-int		word_len(char const *str, int i, char space)
+int		ft_wordlen(char const *str, int i, char space)
 {
 	int len;
 

@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 18:18:49 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 18:38:27 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/19 19:06:53 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libsu.h"
 
 /*
 ** FT_ISDIGIT: tests for a decimal digit character (0 - 9)
