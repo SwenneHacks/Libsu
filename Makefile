@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2020/08/24 23:48:54 by sofferha      ########   odam.nl          #
+#    Updated: 2020/09/02 16:27:48 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,10 +23,16 @@ SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 			ft_split.c ft_strlen.c ft_substr.c ft_isascii.c ft_lenbase.c \
 			ft_memset.c ft_puthexa.c ft_strchr.c ft_strmapi.c ft_tolower.c \
 			ft_isdigit.c ft_maxof.c ft_numlen.c ft_putnbr.c ft_strclen.c \
-			ft_strncmp.c ft_toupper.c ft_memlen \
+			ft_strncmp.c ft_toupper.c ft_putlen.c \
+
+PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c \
+			percentage.c pfunctions.c preci_width.c \
 
 DIR	= all
-OBJ = $(SRC:%.c=%.o)
+PDR = printf
+OBJ = $(SRC:%.c=%.o) 
+PFO = $(PFT:%.c=%.o)
+
 
 # COLORS
 RED		= \x1b[31m
@@ -38,17 +44,21 @@ YELLOW	= \x1b[33m
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(PFO)
 	@echo ""
 	@echo "$(YELLOW)		Linking library..."
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
 	@mkdir -p obj
-	@mv $(OBJ) obj
+	@mv $(OBJ) $(PFO) obj
 	@echo "$(GREEN)~~~~~~~~~ Done \n"
 
 %.o: $(DIR)/%.c
 	@echo "$(PINK)Compiling$(RESET) $< $@"
+	@$(CC) $(CFLAGS) -I $(INC) -c $< -o $@
+
+%.o: $(PDR)/%.c
+	@echo "$(BLUE)Compiling$(RESET) $< $@"
 	@$(CC) $(CFLAGS) -I $(INC) -c $< -o $@
 
 clean:
