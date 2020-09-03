@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/24 23:42:16 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/09/02 16:13:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include "printf.h"
 
 int					get_next_line(int fd, char **line);
 void				ft_prints(const char *str, ...);
@@ -30,7 +31,6 @@ void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-char                *ft_memlen(int len);
 /*
 ** 					Libft STRING functions
 */
@@ -79,7 +79,8 @@ void				ft_putstr(char *s);
 void				ft_putendl(char *s);
 void				ft_putocta(unsigned long n);
 void				ft_puthexa(unsigned long n, char c);
-/*
+int	                ft_putlen(char c, int len);
+/* 
 ** 					Libft ISTRUE functions (3 extras)
 */
 int					ft_isdigit(int c);
@@ -90,6 +91,7 @@ int					ft_isprint(int c);
 int					ft_isupper(int n);
 int					ft_islower(int n);
 int                 ft_isspace(char c);
+int				    ft_isnumsign(int c);
 /*
 ** 					check WORDS functions
 */
