@@ -14,6 +14,7 @@ My ultimate C-Language library (with my own added functions).
 - ft_strclen
 - ft_isupper
 - ft_islower
+- ft_putlen
 - ft_puthexa
 - ft_putocta
 - ft_prints
