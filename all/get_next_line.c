@@ -6,11 +6,23 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/18 17:02:31 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/09/02 15:58:24 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 32
+# endif
+
+typedef enum		e_state
+{
+	ONE_LINE = 1,
+	END_FILE = 0,
+	ERROR = -1,
+	LOOP = 2
+}					t_state;
 
 static char		*copy_buffer(char *old, char *new, int n)
 {
