@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/09/02 16:13:07 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/09/09 18:36:37 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include "printf.h"
+# include "lists/liblist.h"
 
 int					get_next_line(int fd, char **line);
 void				ft_prints(const char *str, ...);
