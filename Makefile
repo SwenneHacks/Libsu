@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2020/09/02 16:27:48 by sofferha      ########   odam.nl          #
+#    Updated: 2020/09/09 18:34:27 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ PFO = $(PFT:%.c=%.o)
 RED		= \x1b[31m
 PINK	= \x1b[35m
 BLUE	= \x1b[34m
+LOVE	= \x1b[36m
 RESET	= \x1b[0m
 GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
@@ -45,13 +46,11 @@ YELLOW	= \x1b[33m
 all: $(NAME)
 
 $(NAME): $(OBJ) $(PFO)
-	@echo ""
-	@echo "$(YELLOW)		Linking library..."
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
 	@mkdir -p obj
 	@mv $(OBJ) $(PFO) obj
-	@echo "$(GREEN)~~~~~~~~~ Done \n"
+	@$(MAKE) -C lists
 
 %.o: $(DIR)/%.c
 	@echo "$(PINK)Compiling$(RESET) $< $@"
@@ -63,15 +62,17 @@ $(NAME): $(OBJ) $(PFO)
 
 clean:
 	@$(RM) -rf obj
-	@echo "$(GREEN)$@ $(PINK)libft"
+	@$(MAKE) clean -C lists
+	@echo "\n$(GREEN)$@ $(PINK)libft"
 	@echo "$(YELLOW)~~~~~~~~~~~~ Done\n"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@$(MAKE) clean -C lists
 	@echo "$(GREEN)$@ $(PINK)libft"
 	@echo "$(YELLOW)~~~~~~~~~~~~ Done\n"
 
 re: fclean all
 	@echo "\n$(RESET)	   Done"
-	@echo "	$(PINK)RE$(GREEN)COM$(YELLOW)PI$(BLUE)LING"
+	@echo "	$(PINK)RE$(GREEN)COM$(YELLOW)PI$(BLUE)LIN$(LOVE)G"
 	@echo "	$(RESET)   Libft\n"
