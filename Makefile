@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2020/09/11 16:58:48 by sofferha      ########   odam.nl          #
+#    Updated: 2020/09/11 17:54:06 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,16 +50,16 @@ RESET	= \x1b[0m
 GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
 
-all: $(NAME) $(ORG)
+all: $(NAME) clear
 
 $(NAME): $(OBJ) $(OPT) $(OLL)
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
 	@echo "$(YELLOW)~~~~~~~~~ Done, you can now use Super-Libft o/"
 
-$(ORG):
-	@mkdir -p obj
-	@mv $(OBJ) $(OPT) $(OLL) obj
+clear:
+	@mkdir -p $(ORG)
+	@mv $(OBJ) $(OPT) $(OLL) $(ORG)
 
 %.o: $(DIR)/%.c
 	@echo "$(PINK)Compiling$(RESET) $< $@"
@@ -74,14 +74,12 @@ $(ORG):
 	@$(CC) $(CFLAGS) -I $(INC) -c $< -o $@
 
 clean:
-	@$(RM) -rf obj
-	@$(MAKE) clean -C lists
+	@$(RM) -rf $(ORG)
 	@echo "\n$(GREEN)$@ $(PINK)libft"
 	@echo "$(YELLOW)~~~~~~~~~~~~ Done\n"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@$(MAKE) clean -C lists
 	@echo "$(GREEN)$@ $(PINK)libft"
 	@echo "$(YELLOW)~~~~~~~~~~~~ Done\n"
 
