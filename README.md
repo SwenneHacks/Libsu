@@ -20,3 +20,9 @@ My ultimate C-Language library (with my own added functions).
 - ft_prints
 - ft_printf
 - get_next_line
+
+## How to use it:
+
+clone the repository with 'git clone >link<' as usual
+then compile the library with 'make' command on terminal
+and you'll see a file called >libft.a< that I use for my projects at school.
