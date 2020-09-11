@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2020/09/09 18:34:27 by sofferha      ########   odam.nl          #
+#    Updated: 2020/09/11 16:58:48 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,11 +28,18 @@ SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c \
 			percentage.c pfunctions.c preci_width.c \
 
+LST		=	lst_reverse.c lst_move_front.c lst_move_back.c \
+			lst_last.c lst_add_back.c lst_del_one.c \
+	 		lst_new.c lst_add_front.c lst_size.c \
+			lst_clear.c lst_map.c lst_fun.c \
+
 DIR	= all
+ORG = obj
+LDR = lists
 PDR = printf
 OBJ = $(SRC:%.c=%.o) 
-PFO = $(PFT:%.c=%.o)
-
+OPT = $(PFT:%.c=%.o)
+OLL = $(LST:%.c=%.o)
 
 # COLORS
 RED		= \x1b[31m
@@ -43,14 +50,16 @@ RESET	= \x1b[0m
 GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
 
-all: $(NAME)
+all: $(NAME) $(ORG)
 
-$(NAME): $(OBJ) $(PFO)
+$(NAME): $(OBJ) $(OPT) $(OLL)
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
+	@echo "$(YELLOW)~~~~~~~~~ Done, you can now use Super-Libft o/"
+
+$(ORG):
 	@mkdir -p obj
-	@mv $(OBJ) $(PFO) obj
-	@$(MAKE) -C lists
+	@mv $(OBJ) $(OPT) $(OLL) obj
 
 %.o: $(DIR)/%.c
 	@echo "$(PINK)Compiling$(RESET) $< $@"
@@ -58,6 +67,10 @@ $(NAME): $(OBJ) $(PFO)
 
 %.o: $(PDR)/%.c
 	@echo "$(BLUE)Compiling$(RESET) $< $@"
+	@$(CC) $(CFLAGS) -I $(INC) -c $< -o $@
+
+%.o: $(LDR)/%.c
+	@echo "$(GREEN)Compiling$(RESET) $< $@"
 	@$(CC) $(CFLAGS) -I $(INC) -c $< -o $@
 
 clean:
@@ -76,3 +89,5 @@ re: fclean all
 	@echo "\n$(RESET)	   Done"
 	@echo "	$(PINK)RE$(GREEN)COM$(YELLOW)PI$(BLUE)LIN$(LOVE)G"
 	@echo "	$(RESET)   Libft\n"
+
+.PHONY: $(NAME)
