@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 22:27:17 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/09/02 15:45:45 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/09/11 14:45:08 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../printf.h"
+#include "printf.h"
 
 int		pt_putsign(t_info *node, int nbr)
 {

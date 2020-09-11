@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 22:26:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/09/02 15:45:58 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/09/11 14:45:18 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../printf.h"
+#include "printf.h"
 
 void	width_d(t_info *node, int nbr, int len)
 {
