@@ -28,7 +28,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
-# include "libsu.h"
+# include "../libsu.h"
 
 typedef	struct	s_info
 {
