@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:31:45 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:30:43 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:22:06 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** returns the number of characters that precede
 ** the terminating NUL character.
 */
-
 size_t	ft_strlen(const char *str)
 {
 	size_t i;

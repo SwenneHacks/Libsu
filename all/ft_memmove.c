@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:13:30 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:31:19 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:23:32 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** from string src to string dst. The two strings may overlap
 ** returns the original value of dst.
 */
-
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	if (!dst && !src)

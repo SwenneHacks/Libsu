@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   get_next_line copy.c                               :+:    :+:            */
+/*   get_next_line.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:49:30 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/08/21 18:50:12 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ static t_state	read_line(int fd, char *buffer, char **out, int *size)
 		buffer[ret] = '\0';
 		*size = ret;
 	}
-	i = ft_strclen(buffer, '\0');
+	i = ft_strclen(buffer, '\n');
 	*out = copy_buffer(*out, buffer, i);
 	if (*out == NULL)
 		return (ERROR);

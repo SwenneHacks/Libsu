@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:21:01 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/19 18:58:12 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:22:26 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** FT_STRDUP: allocates sufficient memory for a copy of
 ** the string s1, does the copy, and returns a pointer to it.
 */
-
 char	*ft_strdup(const char *s1)
 {
 	size_t		i;

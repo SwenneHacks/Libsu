@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/08 13:08:58 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:11 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:22:42 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
 ** FT_PUTSTR_FD: Outputs the string c to given file descriptor.
 */
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s == NULL)

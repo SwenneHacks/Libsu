@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_wordlen.c                                       :+:    :+:            */
+/*   ft_strcmp.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:34 by sofferha      ########   odam.nl         */
+/*   Created: 2019/11/04 21:14:35 by swofferh      #+#    #+#                 */
+/*   Updated: 2020/11/19 23:11:36 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_WORDLEN counts the amout of chars/lettersin a word.
+** FT_STRNCMP: compares two strings...
+** returns the difference
 */
-int		ft_wordlen(char const *str, int i, char space)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int len;
-
-	len = 0;
-	while (str[i] && str[i] != space)
+	while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
 	{
-		len++;
-		i++;
+		s1++;
+		s2++;
 	}
-	return (len);
+	return (*s1 - *s2);
 }

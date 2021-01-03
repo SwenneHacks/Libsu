@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:31 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:48:04 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:21:13 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** FT_STRNSTR: locate of needle in haystack
 ** not more than len charcacters are searched.
 */
-
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t		h;

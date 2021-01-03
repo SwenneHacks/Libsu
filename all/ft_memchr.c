@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:11:38 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:31:07 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:23:41 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 ** returns a pointer to the byte located,
 ** or NULL if no such byte exists within n bytes.
 */
-
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;

@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/19 19:00:05 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:23:52 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** representing the integer received as an argument.
 ** Negative numbers must be handled, NULL if faisl.
 */
-
 static char		*ft_memlen(int len)
 {
 	char	*res;

@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:30:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:25 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:22:12 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 ** dst string was longer than dstsize. Returns the total length of
 ** the string they tried to create.
 */
-
 static size_t	ft_strnlen(const char *s, size_t maxlen)
 {
 	size_t	i;

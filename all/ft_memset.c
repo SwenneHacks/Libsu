@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 13:21:32 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:31:23 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:23:29 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** FT_MEMSET: fill memory with a constant byte
 ** writes len bytes of value c (converted to an unsigned char) to the string b.
 */
-
 void		*ft_memset(void *b, int c, size_t len)
 {
 	size_t				i;

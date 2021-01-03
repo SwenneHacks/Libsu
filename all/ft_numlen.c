@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/18 17:26:49 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:23:23 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
 ** FT_NUMLEN (it's like strlen but for numbers - decimals).
 */
-
 int		ft_numlen(int n)
 {
 	int		len;

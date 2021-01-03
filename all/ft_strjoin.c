@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:47:54 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:22 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:22:23 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** FT_STRJOIN: Allocates malloc and returns a new
 ** string, result of the concatenation of s1 and s2.
 */
-
 char			*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;

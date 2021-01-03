@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:40:42 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:40 by sofferha      ########   odam.nl         */
+/*   Updated: 2020/11/19 22:21:46 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** a substring from the string given in argument.
 ** The substring begins at index ’start’ and is of maximum size ’len’.
 */
-
 char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*sub;
