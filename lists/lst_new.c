@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/26 17:15:22 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 17:17:10 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/02/23 12:07:51 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 ** 	the value of the parameter content. The variable
 ** 	next is initialized to NULL.
 */
-
 t_list		*ft_lstnew(void *content)
 {
 	t_list	*new;

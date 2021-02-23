@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/26 17:22:59 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/11 17:25:36 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/02/23 12:08:04 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** 	of the element’s content using the function del given as a parameter.
 ** 	The memory of 'next' must not be freed under any circumstance.
 */
-
 void		lst_del_one(t_list *node, void (*del)(void*))
 {
 	if (!(node))

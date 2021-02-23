@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/12/09 17:21:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/09/09 17:53:58 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/02/23 12:07:53 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
 ** MOVE_FRONT: Adds content from the end of the list the the very beggining.
 */
-
 void		*lst_move_front(t_list **node, void *content)
 {
 	t_list		*new;
