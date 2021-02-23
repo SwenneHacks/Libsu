@@ -6,14 +6,14 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:28 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/02/23 12:08:50 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_WORDS counts the amout of words (by skipping spaces)
+** MY_WORDS counts the amout of words (by skipping spaces)
 */
 int		ft_words(char const *str, char space)
 {
