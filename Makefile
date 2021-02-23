@@ -6,13 +6,14 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2021/02/19 19:12:19 by sofferha      ########   odam.nl          #
+#    Updated: 2021/02/23 12:24:43 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 	= 	libft.a
 INC 	=	libsu.h
 CFLAGS 	= 	-Wall -Wextra -Werror
+
 SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 			ft_strdup.c ft_strncpy.c ft_wordlen.c ft_putchar.c ft_putocta.c \
 			ft_bzero.c ft_isprint.c ft_memchr.c ft_strjoin.c ft_strnstr.c \
@@ -31,7 +32,7 @@ PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c \
 LST		=	lst_reverse.c lst_move_front.c lst_move_back.c \
 			lst_last.c lst_add_back.c lst_del_one.c \
 	 		lst_new.c lst_add_front.c lst_size.c \
-			lst_clear.c lst_map.c lst_fun.c \
+			lst_clear.c lst_map.c lst_itter.c \
 
 DIR	= all
 ORG = obj
