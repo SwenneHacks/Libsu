@@ -25,4 +25,4 @@ My ultimate C-Language library (with my own added functions).
 
 clone the repository with 'git clone >link<' as usual
 then compile the library with 'make' command on terminal
-and you'll see a file called >libft.a< that I use for my projects at school.
+and you'll see a file called 'libft.a' that I use for my projects at school.
