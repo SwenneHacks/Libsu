@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2021/02/23 12:24:43 by sofferha      ########   odam.nl          #
+#    Updated: 2021/02/23 18:51:02 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ RESET	= \x1b[0m
 GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
 
-all: $(NAME)
+all: $(NAME) $(ORG)
 
 $(NAME): $(OBJ) $(OPT) $(OLL)
 	@$(AR) rcs $@ $^
