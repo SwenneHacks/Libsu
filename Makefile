@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2020/12/15 22:38:39 by sofferha      ########   odam.nl          #
+#    Updated: 2021/02/19 19:12:19 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,14 +50,12 @@ RESET	= \x1b[0m
 GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
 
-all: $(NAME) clear
+all: $(NAME)
 
 $(NAME): $(OBJ) $(OPT) $(OLL)
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
 	@echo "$(YELLOW)~~~~~~~~~ Done, you can now use Super-Libft o/"
-
-clear:
 	@mkdir -p $(ORG)
 	@mv $(OBJ) $(OPT) $(OLL) $(ORG)
 
