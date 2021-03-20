@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 21:14:35 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 23:10:44 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 12:44:10 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 ** returns 0 if equal
 ** returns -1 if smaller
 */
-
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;
