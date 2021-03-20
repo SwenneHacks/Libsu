@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:30:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:25 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 13:08:25 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,26 +19,24 @@
 ** dst string was longer than dstsize. Returns the total length of
 ** the string they tried to create.
 */
-
-static size_t	ft_strnlen(const char *s, size_t maxlen)
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
+	size_t dstlen;
+	size_t srclen;
 
-	i = 0;
-	while (i < maxlen && s[i])
-		i++;
-	return (i);
-}
-
-size_t			ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	dstlen;
-	size_t	srclen;
-
-	dstlen = ft_strnlen(dst, dstsize);
-	srclen = ft_strlen(src);
-	if (dstlen > dstsize)
-		return (dstsize + srclen);
-	ft_strlcpy(dst + dstlen, src, dstsize - dstlen);
+	dstlen = 0;
+	srclen = 0;
+	while (dst[dstlen])
+		dstlen++;
+	while (srclen < dstsize - dstlen - 1 && src[srclen] && dstsize > dstlen)
+	{
+		dst[dstlen + srclen] = src[srclen];
+		srclen++;
+	}
+	dst[dstlen +srclen] = '\0';
+	while (src[srclen] != '\0')
+		srclen++;
+	if (dstsize < dstlen)
+		return (srclen + dstsize);
 	return (dstlen + srclen);
 }
