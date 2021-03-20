@@ -6,20 +6,20 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:52 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 13:46:26 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_SPLIT: Allocates malloc and returns an array of
+** FT_SPLIT: 
+** Allocates malloc and returns an array of
 ** strings obtained by splitting s using the character
 ** c as a delimiter. The array must be ended by a
 ** NULL pointer. Returns the array of new strings result
 ** of the split. NULL if the allocation fails.
 */
-
 static void		*free_words(int j, char **words)
 {
 	while (j != 0)
