@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2021/02/23 19:20:35 by sofferha      ########   odam.nl          #
+#    Updated: 2021/03/20 13:49:29 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 			ft_split.c ft_strlen.c ft_substr.c ft_isascii.c ft_lenbase.c \
 			ft_memset.c ft_puthexa.c ft_strchr.c ft_strmapi.c ft_tolower.c \
 			ft_isdigit.c ft_maxof.c ft_numlen.c ft_putnbr.c ft_strclen.c \
-			ft_strncmp.c ft_toupper.c ft_putlen.c get_all_line.c ft_strcmp.c
+			ft_strncmp.c ft_toupper.c ft_putlen.c get_all_lines.c ft_strcmp.c \
+			ft_nospace.c \
 
 PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c \
 			percentage.c pfunctions.c preci_width.c ft_printf.c
