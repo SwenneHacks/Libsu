@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:50:36 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:36 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 12:44:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 ** specified in the set argument at the beginning and
 ** the end of the string.
 */
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	end;
