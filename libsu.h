@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 23:12:03 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 21:39:10 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
+
 # include "printf/printf.h"
 # include "lists/liblist.h"
 
 int					get_next_line(int fd, char **line);
-int					get_all_line(int fd, char **line);
+int					get_all_lines(int fd, char **line);
 void				ft_prints(const char *str, ...);
 
 /*
@@ -40,6 +41,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 ** 					Libft STRING functions
 */
 
+size_t				ft_strlen(const char *str);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -47,6 +49,7 @@ int					ft_strcmp(const char *s1, const char *s2);
 char                *ft_strncpy(char *dst, const char *src, int n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
+char				**ft_split(char const *s, char c);
 char				*ft_strdup(const char *s1);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_substr(char const *s, unsigned int start, size_t len);
@@ -60,7 +63,6 @@ size_t len);
 */
 
 int                 ft_numlen(int n);
-size_t				ft_strlen(const char *str);
 size_t				ft_lenbase(long long nbr, int base);
 int					ft_wordlen(char const *str, int i, char space);
 int                 ft_strclen(char *str, char c);
@@ -111,11 +113,11 @@ int                 ft_isspace(char c);
 int				    ft_isnumsign(int c);
 
 /*
-** 					check WORDS functions
+** 					my WORDS functions
 */
 
-char				**ft_split(char const *s, char c);
 int					ft_words(char const *str, char space);
+char                *ft_nospace(char *line);
 
 /*
 ** 					Operators
