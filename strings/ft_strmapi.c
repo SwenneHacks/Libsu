@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:57:17 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:33 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 12:44:12 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 ** the string passed as argument to create a new string malloc
 ** resulting from successive applications of f.
 */
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*result;
