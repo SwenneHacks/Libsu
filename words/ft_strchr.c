@@ -6,17 +6,17 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:40 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:33:11 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 13:45:37 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
 /*
-** FT_STRCHR: locate first occurence of character in string
+** FT_STRCHR: l
+** locates first occurence of character in string
 ** returns a pointer to the located character, NULL if it does not appear.
 */
-
 char	*ft_strchr(const char *s, int c)
 {
 	int		index;
