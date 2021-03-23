@@ -1,3 +1,5 @@
+#include "../libsu.h"
+
 static int			new_len(char *line)
 {
 	int		i;
