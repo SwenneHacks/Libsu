@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/08 13:39:25 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:32:07 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/22 23:09:38 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /*
 ** FT_PUTNBR_FD: Outputs the integer n to given file descriptor.
 */
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
