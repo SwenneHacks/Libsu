@@ -6,19 +6,13 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:22:34 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/23 17:56:07 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
-/*
-** FT_SPLIT: Allocates malloc and returns an array of
-** strings obtained by splitting s using the character
-** c as a delimiter. The array must be ended by a
-** NULL pointer. Returns the array of new strings result
-** of the split. NULL if the allocation fails.
-*/
+
 static void		*free_words(int j, char **words)
 {
 	while (j != 0)
@@ -60,6 +54,12 @@ static char		**copy_words(char const *s, char c, char **words)
 	return (words);
 }
 
+/*
+** FT_SPLIT: Allocates a string and returns an array of
+** 'words' obtained by splitting it using the character
+** c as a delimiter. The array must be ended by a
+** NULL pointer. Returns NULL if the allocation fails.
+*/
 char			**ft_split(char const *s, char c)
 {
 	char **words;
