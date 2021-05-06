@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   get_next_line copy.c                               :+:    :+:            */
+/*   get_next_line.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:49:30 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 13:55:02 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,10 @@ static t_state	read_line(int fd, char *buffer, char **out, int *size)
 	return (LOOP);
 }
 
-int				get_all_line(int fd, char **line)
+/*
+** GET_ALL_LINES allocates the entire file (whitout skipping newlines)
+*/
+int				get_all_lines(int fd, char **line)
 {
 	static char			buf[BUFFER_SIZE + 1];
 	static int			size;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   get_next_line.c                                    :+:    :+:            */
+/*   get_all_line.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/21 18:50:12 by sofferha      ########   odam.nl         */
+/*   Updated: 2021/03/20 13:43:16 by sofferha      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,9 @@ static t_state	read_line(int fd, char *buffer, char **out, int *size)
 	return (LOOP);
 }
 
+/*
+** GET_NEXT_LINE transfers each line read to the buffer (by stopping at newlines)
+*/
 int				get_next_line(int fd, char **line)
 {
 	static char			buf[BUFFER_SIZE + 1];
