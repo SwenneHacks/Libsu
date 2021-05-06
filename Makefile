@@ -6,13 +6,13 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2021/03/20 13:49:29 by sofferha      ########   odam.nl          #
+#    Updated: 2021/03/23 14:55:04 by sofferha      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 	= 	libft.a
 INC 	=	libsu.h
-CFLAGS 	= 	-Wall -Wextra -Werror
+CFLAGS 	= 	-Wall -Wextra -Werror -g
 
 SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 			ft_strdup.c ft_strncpy.c ft_wordlen.c ft_putchar.c ft_putocta.c \
