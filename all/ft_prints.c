@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/30 18:00:18 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/19 18:57:51 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:13:54 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ static void	ft_conversions(const char *str, va_list arg)
 		ft_hexadecimal(str, arg);
 }
 
+/* Simplified version of printf without flags */
 void		ft_prints(const char *str, ...)
 {
 	unsigned int	index;

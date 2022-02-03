@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 19:03:50 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:31:03 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:08:05 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** FT_MEMCCPY: copy string until character found
 ** returns the original value of dst.
 */
-
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t			i;

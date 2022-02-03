@@ -6,12 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/29 11:16:22 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 23:26:44 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:12:57 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libsu.h"
 
+/*
+** FT_ATOI: converts ascii char/strings to integer values.
+** considers as well positive and negative values.
+*/
 int	ft_atoi(const char *str)
 {
 	unsigned long	result;

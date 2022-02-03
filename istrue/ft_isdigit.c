@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 18:18:49 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/19 19:06:53 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:10:18 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 ** FT_ISDIGIT: tests for a decimal digit character (0 - 9)
 ** returns zero if character tests false, non-zero is true.
 */
-
 int		ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

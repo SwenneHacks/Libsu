@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 18:37:09 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/08/17 22:31:12 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:07:53 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 ** Returns zero if the two strings are identical, otherwise
 ** the difference between the first two differing bytes.
 */
-
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*first;

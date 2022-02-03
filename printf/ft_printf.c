@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 22:26:36 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/06/30 14:22:47 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 14:16:00 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	init_struct(t_info *node)
 	node->ret_value = 0;
 }
 
+/* My own printf with precision and width and +- flags */
 int		ft_printf(const char *str, ...)
 {
 	t_info	node;
