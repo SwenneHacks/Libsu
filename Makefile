@@ -6,13 +6,13 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2021/03/23 14:55:04 by sofferha      ########   odam.nl          #
+#    Updated: 2022/02/03 14:50:26 by swofferh      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 	= 	libft.a
 INC 	=	libsu.h
-CFLAGS 	= 	-Wall -Wextra -Werror -g
+CFLAGS 	= 	-Wall -Wextra -Werror
 
 SRC 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c \
 			ft_strdup.c ft_strncpy.c ft_wordlen.c ft_putchar.c ft_putocta.c \
@@ -32,7 +32,7 @@ PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c \
 
 LST		=	lst_reverse.c lst_move_front.c lst_move_back.c \
 			lst_last.c lst_add_back.c lst_del_one.c \
-	 		lst_new.c lst_add_front.c lst_size.c \
+			lst_new.c lst_add_front.c lst_size.c \
 			lst_clear.c lst_map.c lst_itter.c
 
 DIR	= all
@@ -53,11 +53,11 @@ GREEN	= \x1b[32m
 YELLOW	= \x1b[33m
 
 all: $(NAME)
+	@echo "$(YELLOW)~~~~~~~~~ Done, you can now use Super-Libft o/"
 
 $(NAME): $(OBJ) $(OPT) $(OLL)
 	@$(AR) rcs $@ $^
 	@ranlib $(NAME)
-	@echo "$(YELLOW)~~~~~~~~~ Done, you can now use Super-Libft o/"
 	@mkdir -p $(ORG)
 	@mv $(OBJ) $(OPT) $(OLL) $(ORG)
 
