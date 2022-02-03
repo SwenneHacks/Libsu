@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2021/03/20 13:43:16 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/02/03 17:29:29 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ static t_state	read_line(int fd, char *buffer, char **out, int *size)
 /*
 ** GET_NEXT_LINE transfers each line read to the buffer (by stopping at newlines)
 */
-int				get_next_line(int fd, char **line)
+int				get_next_lines(int fd, char **line)
 {
 	static char			buf[BUFFER_SIZE + 1];
 	static int			size;
