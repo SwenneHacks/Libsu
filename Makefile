@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2022/02/03 19:14:17 by swofferh      ########   odam.nl          #
+#    Updated: 2022/02/07 19:06:27 by swofferh      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ all: $(NAME)
 
 $(NAME): $(O_LIB) $(O_PFT) $(O_LST)
 	@$(AR) rcs $@ $^
-	@ranlib $(NAME)
+	@ranlib $@
 	$(ADD_GIT_IGNORE)
 	$(LIBFT_MESSAGE)
 
