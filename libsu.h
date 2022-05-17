@@ -3,36 +3,37 @@
 
 # include "libft.h"
 
-// ABOUT THIS LIBRARY
+// EXTRAS IN LIBRARY
 
 // Added functions:
 int			        ft_maxof(int v1, int v2);
 
 // Handling spaces:
+int                 ft_isspace(char c);
+char                *ft_nospace(char *line);
 int					ft_words(char const *str, char space);
 int					ft_wordlen(char const *str, int i, char space);
-char                *ft_nospace(char *line);
 
 // Returning length:
 int                 ft_numlen(int n);
 size_t				ft_lenbase(long long nbr, int base);
 int     			ft_textsize(const char *str);
 
-// libft upgrades:
+// Libft upgrades:
 
+int					ft_isupper(int n);
+int					ft_islower(int n);
 int                 ft_strclen(char *str, char c);
-//   ft_strncpy
-//   ft_isupper
-//   ft_islower
 
-//   ft_putlen
-//   ft_puthexa
-//   ft_putocta
+//  More printing:
+
+void				ft_putnbr(int n);
+void				ft_putchar(char c);
+void				ft_putstr(char *s);
+void				ft_putendl(char *s);
+void				ft_putocta(unsigned long n);
+void				ft_puthexa(unsigned long n, char c);
 void			    ft_prints(const char *str, ...);
-
-
-int				    ft_printf(const char *str, ...);
-int				    get_next_line(int fd, char **line);
-int 				get_all_lines(int fd, char **line);
+int	                ft_putlen(char c, int len);
 
 #endif

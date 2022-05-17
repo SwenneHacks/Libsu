@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/05/16 19:04:35 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/05/17 11:13:41 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 int					get_next_line(int fd, char **line);
 int					get_all_lines(int fd, char **line);
-int				ft_printf(const char *str, ...);
+int				    ft_printf(const char *str, ...);
 
 /*
 ** 					Libft MEMORY functions
@@ -49,8 +49,8 @@ int					ft_strcmp(const char *s1, const char *s2);
 char                *ft_strncpy(char *dst, const char *src, int n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
-char				**ft_split(char const *s, char c);
 char				*ft_strdup(const char *s1);
+char				**ft_split(char const *s, char c);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
