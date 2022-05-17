@@ -6,16 +6,16 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2022/02/14 14:05:54 by swofferh      ########   odam.nl          #
+#    Updated: 2022/05/16 16:26:56 by swofferh      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 include Makepretty.mk
 
-NAME 	= 	libft.a
-INC 	=	libsu.h
+PROJECT = 	libft
+NAME 	= 	$(PROJECT).a
+INC 	=	$(PROJECT).h
 CFLAGS 	= 	-Wall -Wextra -Werror
-PROJECT = 	Libft
 
 LIB 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c\
 			ft_strdup.c ft_strncpy.c ft_wordlen.c ft_putchar.c ft_putocta.c\
