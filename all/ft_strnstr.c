@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 17:14:31 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:13 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:09:42 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRNSTR: locate of needle in haystack
-** not more than len charcacters are searched.
+FT_STRNSTR: 
+locate of needle in haystack
+not more than len charcacters are searched.
 */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

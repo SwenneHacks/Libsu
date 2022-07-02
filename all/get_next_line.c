@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 21:54:03 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/09/02 15:58:24 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 17:48:08 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 32

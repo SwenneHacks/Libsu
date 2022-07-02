@@ -6,11 +6,11 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:53:06 by swofferh      #+#    #+#                 */
-/*   Updated: 2021/03/23 17:56:07 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:08:05 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 
 static void		*free_words(int j, char **words)
@@ -55,10 +55,11 @@ static char		**copy_words(char const *s, char c, char **words)
 }
 
 /*
-** FT_SPLIT: Allocates a string and returns an array of
-** 'words' obtained by splitting it using the character
-** c as a delimiter. The array must be ended by a
-** NULL pointer. Returns NULL if the allocation fails.
+FT_SPLIT: 
+Allocates a string and returns an array of
+'words' obtained by splitting it using the character
+c as a delimiter. The array must be ended by a
+NULL pointer. Returns NULL if the allocation fails.
 */
 char			**ft_split(char const *s, char c)
 {

@@ -1,4 +1,4 @@
-#include "../libsu.h"
+#include "libft.h"
 
 static int			new_len(char *line)
 {
@@ -23,8 +23,9 @@ static int			new_len(char *line)
 
 
 /*
-** FT_NOSPACE: removes all spaces...
-** returns the new string ands prints new len
+FT_NOSPACE: 
+removes all spaces...
+returns the new string ands prints new len
 */
 char		*ft_nospace(char *line)
 {

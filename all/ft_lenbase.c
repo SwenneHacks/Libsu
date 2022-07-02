@@ -6,14 +6,15 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:23:49 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:02:10 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_BASELEN (it's like numlen but handy for different num bases).
+FT_BASELEN:
+it's like numlen but handy for different num bases.
 */
 size_t	ft_lenbase(long long nbr, int base)
 {

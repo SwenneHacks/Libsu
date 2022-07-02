@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/08 14:33:29 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:23:04 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:15:04 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_PUTENDL_FD: Outputs the string c to given
-** file descriptor, followed by a newline.
+FT_PUTENDL_FD: 
+Outputs the string c to given
+File descriptor, followed by a newline.
 */
 void	ft_putendl_fd(char *s, int fd)
 {

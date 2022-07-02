@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 19:03:50 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:23:44 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:01:35 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_MEMCCPY: copy string until character found
-** returns the original value of dst.
+FT_MEMCCPY:
+copy string until character found
+returns the original value of dst.
 */
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

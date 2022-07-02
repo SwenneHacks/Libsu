@@ -6,11 +6,11 @@
 /*   By: sofferha <sofferha@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/02 15:49:00 by sofferha      #+#    #+#                 */
-/*   Updated: 2020/09/02 16:12:23 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 17:48:08 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../libsu.h"
+# include "libft.h"
 
 int		ft_putlen(char c, int len)
 {

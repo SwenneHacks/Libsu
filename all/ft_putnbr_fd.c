@@ -6,14 +6,15 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/08 13:39:25 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:22:53 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:14:57 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_PUTNBR_FD: Outputs the integer n to given file descriptor.
+FT_PUTNBR_FD: 
+Outputs the integer n to given file descriptor.
 */
 void	ft_putnbr_fd(int n, int fd)
 {

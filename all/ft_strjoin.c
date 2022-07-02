@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:47:54 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/02/16 16:37:07 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:14:31 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRJOIN: Joins one string to the end of another.
-** returns new string, the result after appending.
+FT_STRJOIN: 
+Joins one string to the end of another.
+returns new string, the result after appending.
 */
 char			*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 21:14:35 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 23:11:36 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:14:38 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRNCMP: compares two strings...
-** returns the difference
+FT_STRNCMP: 
+compares two strings...
+returns the difference
 */
 int	ft_strcmp(const char *s1, const char *s2)
 {

@@ -6,16 +6,17 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:57:17 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:22:03 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:14:17 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRMAPI: Applies the function f to each character of
-** the string passed as argument to create a new string malloc
-** resulting from successive applications of f.
+FT_STRMAPI: 
+Applies the function f to each character of
+the string passed as argument to create a new string malloc
+resulting from successive applications of f.
 */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

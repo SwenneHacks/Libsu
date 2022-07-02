@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/01 16:59:00 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:23:35 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:06:22 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_MEMCPY: copy memory area
-** copies n bytes from memory area src to memory area dest.
+FT_MEMCPY: 
+copy memory area
+copies n bytes from memory area src to memory area dest.
 */
 void		*ft_memcpy(void *dst, const void *src, size_t n)
 {

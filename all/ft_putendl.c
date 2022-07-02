@@ -6,11 +6,11 @@
 /*   By: sofferha <sofferha@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/18 21:43:11 by sofferha      #+#    #+#                 */
-/*   Updated: 2020/08/18 21:43:13 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 17:48:08 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 void	ft_putendl(char *s)
 {

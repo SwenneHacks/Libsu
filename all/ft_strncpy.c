@@ -6,15 +6,15 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:37:02 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:57 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:09:34 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STR_N_CPY
-** Copies a string until a given 'stop' (number of times/len).
+FT_STR_N_CPY:
+Copies a string until a given 'stop' (number of times/len).
 */
 char		*ft_strncpy(char *dst, const char *src, int n)
 {

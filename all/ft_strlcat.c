@@ -6,18 +6,19 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 20:30:27 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:22:12 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:14:27 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRLCAT: Appends string src to the end of dst.
-** It will append at most dstsize - strlen(dst) - 1 characters.
-** It will then NUL-terminate, unless dstsize is 0 or the original
-** dst string was longer than dstsize. Returns the total length of
-** the string they tried to create.
+FT_STRLCAT: 
+Appends string src to the end of dst.
+It will append at most dstsize - strlen(dst) - 1 characters.
+It will then NUL-terminate, unless dstsize is 0 or the original
+dst string was longer than dstsize. Returns the total length of
+the string they tried to create.
 */
 static size_t	ft_strnlen(const char *s, size_t maxlen)
 {

@@ -6,14 +6,15 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/06/19 22:03:30 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:23:46 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:15:59 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_MAXOF (used on printf a lot) to check which int/len is bigger/higher
+FT_MAXOF:
+perator used on printf a lot to check which int/len is bigger/higher
 */
 int	ft_maxof(int v1, int v2)
 {

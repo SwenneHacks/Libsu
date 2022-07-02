@@ -6,15 +6,16 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/31 16:52:39 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:24:13 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:07:43 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
-/*
-** FT_ISALNUM: checks for an alphabetic character or digit
-** returns zero if character tests false, non-zero is true.
+/* 
+FT_ISALNUM: 
+checks for an alphabetic character or digit
+returns zero if character tests false, non-zero is true.
 */
 int		ft_isalnum(int c)
 {

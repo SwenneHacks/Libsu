@@ -6,17 +6,20 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/04 21:14:35 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/02/07 20:43:24 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:09:17 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 
-// ** FT_STRNCMP: compares two strings lexographically...
-// ** returns 1 if s1 is bigger than s2
-// ** returns 0 if equal
-// ** returns -1 if smaller
+/*
+FT_STRNCMP: 
+compares two strings lexographically...
+returns 1 if s1 is bigger than s2
+returns 0 if equal
+returns -1 if smaller
+*/
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;

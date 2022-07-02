@@ -6,17 +6,18 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:50:36 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:49 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:09:57 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_STRTRIM: Allocates with malloc and returns a copy of
-** the string given as argument without the characters
-** specified in the set argument at the beginning and
-** the end of the string.
+FT_STRTRIM: 
+Allocates with malloc and returns a copy of
+the string given as argument without the characters
+specified in the set argument at the beginning and
+the end of the string.
 */
 char	*ft_strtrim(char const *s1, char const *set)
 {

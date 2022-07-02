@@ -6,16 +6,17 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:40:42 by swofferh      #+#    #+#                 */
-/*   Updated: 2020/11/19 22:21:46 by sofferha      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:10:03 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
 /*
-** FT_SUBSTR: Allocates with malloc and returns
-** a substring from the string given in argument.
-** The substring begins at index ’start’ and is of maximum size ’len’.
+FT_SUBSTR: 
+Allocates with malloc and returns
+a substring from the string given in argument.
+The substring begins at index ’start’ and is of maximum size ’len’.
 */
 char		*ft_substr(char const *s, unsigned int start, size_t len)
 {

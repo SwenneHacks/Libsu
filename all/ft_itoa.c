@@ -6,16 +6,17 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/13 20:55:08 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/02/03 17:29:59 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/02 18:06:54 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libsu.h"
+#include "libft.h"
 
-/*
-** FT_ITOA: Allocates with malloc and returns a string
-** representing the integer received as an argument. 
-** Negative numbers must be handled, NULL if fail.
+/* 
+FT_ITOA:
+Allocates with malloc and returns a string
+representing the integer received as an argument. 
+Negative numbers must be handled, NULL if fail.
 */
 static char		*ft_memlen(int len)
 {
