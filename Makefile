@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2022/07/02 18:23:54 by swofferh      ########   odam.nl          #
+#    Updated: 2022/07/02 18:26:35 by swofferh      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ LST		=	lst_reverse.c lst_move_front.c lst_move_back.c\
 
 INC 	= inc
 DIR_OBJ = obj
-DIR_LIB = all
+DIR_LIB = libsu
 DIR_LST = lists
 DIR_PFT = printf
 O_LIB = $(LIB:%.c=$(DIR_OBJ)/$(DIR_LIB)/%.o) 
