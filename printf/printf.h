@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/01/08 22:27:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/05/16 16:31:01 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/02 17:41:50 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
-# include "../libft.h"
+# include "libft.h"
 
 typedef	struct	s_info
 {

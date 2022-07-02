@@ -6,7 +6,7 @@
 #    By: swofferh <swofferh@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/19 21:39:04 by swofferh      #+#    #+#                  #
-#    Updated: 2022/05/16 16:26:56 by swofferh      ########   odam.nl          #
+#    Updated: 2022/07/02 18:23:54 by swofferh      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,9 @@ include Makepretty.mk
 
 PROJECT = 	libft
 NAME 	= 	$(PROJECT).a
-INC 	=	$(PROJECT).h
 CFLAGS 	= 	-Wall -Wextra -Werror
 
-LIB 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c\
+LIB 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_putnbr_fd.c \
 			ft_strdup.c ft_strncpy.c ft_wordlen.c ft_putchar.c ft_putocta.c\
 			ft_bzero.c ft_isprint.c ft_memchr.c ft_strjoin.c ft_strnstr.c\
 			ft_words.c ft_calloc.c ft_isspace.c ft_memcmp.c ft_strncmp.c\
@@ -27,8 +26,7 @@ LIB 	= 	ft_atoi.c ft_islower.c ft_memccpy.c ft_prints.c ft_putnbr_fd.c\
 			ft_split.c ft_strlen.c ft_substr.c ft_isascii.c ft_lenbase.c\
 			ft_memset.c  ft_strchr.c ft_strmapi.c ft_tolower.c ft_maxof.c\
 			ft_isdigit.c ft_numlen.c ft_putnbr.c ft_strclen.c ft_putlen.c\
-			ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c\
-			get_all_lines.c get_next_line.c
+			ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c get_next_line.c\
 
 PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c\
 			percentage.c pfunctions.c preci_width.c ft_printf.c
@@ -38,6 +36,7 @@ LST		=	lst_reverse.c lst_move_front.c lst_move_back.c\
 			lst_new.c lst_add_front.c lst_size.c\
 			lst_clear.c lst_map.c lst_itter.c
 
+INC 	= inc
 DIR_OBJ = obj
 DIR_LIB = all
 DIR_LST = lists

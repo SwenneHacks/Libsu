@@ -22,4 +22,4 @@ RESET_MESSAGE_2	= @echo "	$(PINK)RE$(GREEN)COM$(YELLOW)PI$(BLUE)LIN$(LOVE)G"
 RESET_MESSAGE_1	= @echo "	$(RESET)   $(PROJECT)\n"
 
 ADD_GIT_IGNORE	= @echo $@ "\n"obj "\n".gitignore >> .gitignore
-BYE_GIT_IGNORE	= $(RM) .gitignore
+BYE_GIT_IGNORE	= @$(RM) .gitignore
