@@ -30,7 +30,7 @@ LSU		= 	ft_islower.c ft_nospace.c ft_puthexa.c ft_maxof.c ft_putendl.c\
 			ft_isupper.c  ft_putnbr.c ft_wordlen.c ft_putstr.c\
 			ft_lenbase.c ft_putchar.c ft_putocta.c ft_words.c\
 			ft_strjoin_free.c ft_free_array.c ft_print_array.c\
-			get_next_line.c ft_itol.c
+			get_next_line.c ft_atol.c
 
 PFT		=	type_c.c type_s.c type_d.c type_u.c type_p.c type_x.c\
 			percentage.c pfunctions.c preci_width.c ft_printf.c
