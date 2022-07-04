@@ -25,7 +25,7 @@ static int			new_len(char *line)
 /*
 FT_NOSPACE: 
 removes all spaces...
-returns the new string ands prints new len
+returns the new string without spaces
 */
 char		*ft_nospace(char *line)
 {

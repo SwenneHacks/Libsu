@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/07/02 17:46:15 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/02 21:45:56 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@
 # include <stdlib.h>
 # include <stdarg.h>
 
-# include "printf/printf.h"
+# include "../printf/printf.h"
 # include "liblist.h"
 
 int					get_next_line(int fd, char **line);
-int					get_all_lines(int fd, char **line);
 int				    ft_printf(const char *str, ...);
 
 /* Libft MEMORY functions */
@@ -54,13 +53,17 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_strnstr(const char *haystack, const char *needle, \
 size_t len);
 
-/* My LEN functions */
+/*  Libft ISTRUE functions (3 extras) */
 
-int                 ft_numlen(int n);
-size_t				ft_lenbase(long long nbr, int base);
-int					ft_wordlen(char const *str, int i, char space);
-int                 ft_strclen(char *str, char c);
-int     			ft_textsize(const char *str);
+int					ft_isdigit(int c);
+int					ft_isalpha(int c);
+int					ft_isalnum(int c);
+int					ft_isascii(int c);
+int					ft_isprint(int c);
+int					ft_isupper(int n);
+int					ft_islower(int n);
+int                 ft_isspace(char c);
+int				    ft_isnumsign(int c);
 
 /* Libft 'MAPI' functions */
 
@@ -86,21 +89,24 @@ void				ft_putocta(unsigned long n);
 void				ft_puthexa(unsigned long n, char c);
 int	                ft_putlen(char c, int len);
 
-/*  Libft ISTRUE functions (3 extras) */
+/* extra Array functions */
 
-int					ft_isdigit(int c);
-int					ft_isalpha(int c);
-int					ft_isalnum(int c);
-int					ft_isascii(int c);
-int					ft_isprint(int c);
-int					ft_isupper(int n);
-int					ft_islower(int n);
-int                 ft_isspace(char c);
-int				    ft_isnumsign(int c);
+char	            *ft_strjoin_free(char *str1, char *str2);
+void	            ft_free_array(char **str);
+void	            ft_print_array(char *array[]);
+
+/* My LEN functions */
+
+int                 ft_numlen(int n);
+size_t				ft_lenbase(long long nbr, int base);
+int					ft_wordlen(char const *str, int i, char space);
+int                 ft_strclen(char *str, char c);
+int     			ft_textsize(const char *str);
 
 /* my WORDS functions */
 
 int					ft_words(char const *str, char space);
+char		        *ft_strndup(char *s, int start);
 char                *ft_nospace(char *line);
 
 /* Operators */
