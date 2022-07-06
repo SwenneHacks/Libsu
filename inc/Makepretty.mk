@@ -11,11 +11,12 @@ YELLOW	= \x1b[33m
 LIBFT_MESSAGE 	= @echo "$(YELLOW)~~~~~~~~~ Done, you can now use this Super-Libft.a o/"
 COMPILE_MESSAGE	= @echo "$(BLUE)Compiling$(RESET) $<"
 MESSAGE_LINKED	= @echo "$(GREEN)Compiling$(RESET) $<"
-MESSAGE_PRINTF	= @echo "$(LOVE)Compiling$(RESET) $<"
+MESSAGE_PRINTF	= @echo "$(YELLOW)Compiling$(RESET) $<"
 
 EMPTY_MESSAGE	= @echo ""
 MESSY_MESSAGE	= @echo "$(RED)$@	$(RESET)LIBFT"
 DONE_MESSAGE 	= @echo "$(RESET)	 Done.\n"
+DONE_LIBFT		= @echo "$(N)$(BLUE)$(---)--$(N) Done compiling LIBFT$(N)$(---)--$(RESET)"
 
 RESET_MESSAGE_3	= @echo "	   $(RESET)done"
 RESET_MESSAGE_2	= @echo "	$(PINK)RE$(GREEN)COM$(YELLOW)PI$(BLUE)LIN$(LOVE)G"

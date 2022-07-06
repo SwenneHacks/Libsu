@@ -6,7 +6,7 @@
 /*   By: swofferh <swofferh@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 17:10:52 by swofferh      #+#    #+#                 */
-/*   Updated: 2022/07/02 21:45:56 by swofferh      ########   odam.nl         */
+/*   Updated: 2022/07/06 18:00:14 by swofferh      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@
 
 # include "../printf/printf.h"
 # include "liblist.h"
+# include "libsu.h"
 
 int					get_next_line(int fd, char **line);
 int				    ft_printf(const char *str, ...);
 
-/* Libft MEMORY functions */
+/*  Libft MEMORY functions */
 
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t count, size_t size);
@@ -34,7 +35,7 @@ void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 
-/* Libft STRING functions */
+/*  Libft STRING functions */
 
 size_t				ft_strlen(const char *str);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
@@ -53,64 +54,33 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_strnstr(const char *haystack, const char *needle, \
 size_t len);
 
-/*  Libft ISTRUE functions (3 extras) */
+/*  Libft ISTRUE functions (4 extras) */
 
 int					ft_isdigit(int c);
 int					ft_isalpha(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+
+int                 ft_isnull(int n);
 int					ft_isupper(int n);
 int					ft_islower(int n);
-int                 ft_isspace(char c);
 int				    ft_isnumsign(int c);
+int                 ft_isspace(char c);
 
-/* Libft 'MAPI' functions */
+/*   Libft 'MAPI' functions */
 
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
+
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
-/* Libft PUT/PRINT functions */
+/*  Libft PUT/PRINT functions */
 
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-
-/* Extra print functions (outside libft) */
-
-void				ft_putnbr(int n);
-void				ft_putchar(char c);
-void				ft_putstr(char *s);
-void				ft_putendl(char *s);
-void				ft_putocta(unsigned long n);
-void				ft_puthexa(unsigned long n, char c);
-int	                ft_putlen(char c, int len);
-
-/* extra Array functions */
-
-char	            *ft_strjoin_free(char *str1, char *str2);
-void	            ft_free_array(char **str);
-void	            ft_print_array(char *array[]);
-
-/* My LEN functions */
-
-int                 ft_numlen(int n);
-size_t				ft_lenbase(long long nbr, int base);
-int					ft_wordlen(char const *str, int i, char space);
-int                 ft_strclen(char *str, char c);
-int     			ft_textsize(const char *str);
-
-/* my WORDS functions */
-
-int					ft_words(char const *str, char space);
-char		        *ft_strndup(char *s, int start);
-char                *ft_nospace(char *line);
-
-/* Operators */
-
-int					ft_maxof(int v1, int v2);
 
 #endif
