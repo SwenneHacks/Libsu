@@ -5,7 +5,8 @@ My ultimate C-Language library (with my own added functions).
 
 Overview of functions:
 
-``` int         get_next_line(int fd, char **line);
+``` 
+int         get_next_line(int fd, char **line);
 int         ft_printf(const char *str, ...);
 
 /*  Libft MEMORY functions */
@@ -65,6 +66,57 @@ void        ft_putchar_fd(char c, int fd);
 void        ft_putstr_fd(char *s, int fd);
 void        ft_putendl_fd(char *s, int fd);
 void        ft_putnbr_fd(int n, int fd);
+
+/* 	Extra functions (outside libft)
+*/
+long	            ft_atol(const char *str);
+int					ft_isspace(char c);
+int					ft_isupper(int n);
+int					ft_islower(int n);
+int					ft_isnull(int n);
+
+/*  Extra printing functions 
+*/
+void				ft_putnbr(int n);
+void				ft_putchar(char c);
+void				ft_putstr(char *s);
+void				ft_putendl(char *s);
+
+void				ft_putoctal(unsigned long n);
+void				ft_puthexa(unsigned long n);
+void				ft_putbase(long long nbr, int base);
+
+int			        ft_less_c_len(char *line, char c);
+int	                ft_putlen(char c, int len);
+
+/*  Extra STR functions 
+*/
+char	            *ft_strrev(char *s);
+char		        *ft_strndup(char *s, int start);
+
+/*   Extra LEN functions 
+*/
+int                 ft_numlen(int n);
+size_t				ft_lenbase(long long nbr, int base);
+int					ft_wordlen(char const *str, int i, char space);
+int                 ft_strclen(char *str, char c);
+int     			ft_textsize(const char *str);
+
+/*  Extra WORDS functions
+*/
+int					ft_words(char const *str, char space);
+char                *ft_nospace(char *line);
+
+/*  Extra Array functions 
+*/
+char	            *ft_strjoin_free(char *str1, char *str2);
+void	            ft_free_array(char **str);
+void	            ft_print_array(char *array[]);
+
+/*  Operators 
+*/
+int					ft_maxof(int v1, int v2);
+
 
 #endif
  ```
